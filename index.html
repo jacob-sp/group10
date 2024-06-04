@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Landslide Susceptibility Mapping Group 10</title>
+    <style>
+	body {
+	background-image: url('bg.jpg');
+	font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+	}
+	
+        header {
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b1/Pretty_Rock_Landslide.gif);
+            background-size: cover;
+			background-position: bottom;
+			font-family: 'Helvetica', sans-serif;
+			color: white;
+            padding: 10em 0;
+            text-align: center;
+			font-size: 20px; 
+			margin: 40px
+        }
+        main {
+            margin: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('63934.jpg');
+            background-size: cover;
+			background-position: bottom;
+			border-radius: 10px;ss
+        }
+        .section-container {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .image-container, .video-container {
+            width: 45%;
+            height: 340px;
+            margin: 20px;
+			
+			
+        }
+        .image-container img, .video-container img, .video-container iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+			border-radius: 10px;
+        }
+        .content, .video-details {
+            flex: 1;
+            max-width: 55%;
+			margin: 20px;
+			text-align: justify;
+        }
+        .content section, .video-details section {
+            margin-bottom: 40px;
+        }
+		nav {
+    position: absolute;
+    top: 448px; /* Move 20 pixels from the top */
+    right: 40.2px; /* Move 10 pixels from the right */
+	bottom: 10; /* Align the bottom of the nav to the bottom of the header */
+    width: 94.9%; /* Ensure the nav spans the full width of the header */
+	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+	padding: .5em 0;
+    margin-top: 10px;
+}
+
+        nav ul {
+            list-style-type: none;
+            padding: 0, 1em; 
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 40px;
+        }
+        nav ul li a {
+            color: white;
+			font-size:20px;
+	
+            text-decoration: none;
+        }
+        .video-container {
+            position: relative;
+        }
+        .video-container img {
+            cursor: pointer;
+        }
+        .video-container .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/YouTube_play_button_icon_%282013-2017%29.svg/2048px-YouTube_play_button_icon_%282013-2017%29.svg.png') no-repeat center;
+            background-size: cover;
+            cursor: pointer;
+            z-index: 1;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .blog-section {
+            padding: 1em 0; /* Adjust padding for top and bottom */
+            background-color: rgba(244, 244, 244, 0.6); /* Set semi-transparent background */
+            width: 100%; /* Ensure full width */
+        }
+        .blog-section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 1em;
+			font-family: 'Arial', sans-serif;
+        }
+        .blog-posts {
+            display: flex;
+            justify-content: space-around; /* Space out the blog posts evenly */
+            flex-direction: row; /* Align items in a row */
+            flex-wrap: wrap; /* Wrap the posts on smaller screens */
+            width: 70%; /* Ensure full width */
+            margin: 0 auto; /* Center align the flex container */
+        }
+        .blog-post {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2em;
+            width: 50%; /* Adjust width as necessary */
+			border-radius: 10px; /* Add curved edges */
+            overflow: hidden; /* Ensure content inside curved edges */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+        }
+        .blog-post img {
+            width: 100%; /* Ensures the image takes up the full width of its container */
+            max-width: 300px; /* Limit the image width */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 1em;
+            border-top-left-radius: 10px; /* Curved edges for top corners */
+            border-top-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+        }
+        .blog-post a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            text-align: center;
+			padding: 0 1em;
+        }
+        .blog-post a:hover {
+            text-decoration: underline;
+        }
+		footer {
+            background-color: rgba(94, 90, 90, 0.5);
+            color: white;
+            text-align: center;
+            padding: .5em 0;
+            margin-top: 10px;
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Landslide Susceptibility Mapping Group 10</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="section-container">
+            <div class="image-container">
+                <img src="Landslide image.jpg" alt="Landslide Image">
+            </div>
+            <div class="content">
+                <section>
+                    <h2>Introduction</h2>
+                    <p>A landslide refers to the rapid movement of a mass of soil, rock, or debris down a slope. It is a natural disaster that can cause significant damage to property, infrastructure, and human life. Landslides can be triggered by various factors, including heavy rainfall, earthquakes, volcanic activity, slope instability, and human activities such as deforestation or improper land use.</p>
+                </section>
+                <section>
+                    <h2>Factors Contributing to Landslides</h2>
+                    <p>Landslides can occur due to several factors. The most common triggers are excessive rainfall or water accumulation, which increases the weight and pore pressure in the soil or rock, reducing its stability. Earthquakes can also induce landslides by shaking the ground and destabilizing slopes. Other factors include slope angle, geology, vegetation cover, human activities that alter the natural stability of slopes, and changes in groundwater levels.</p>
+                </section>
+            </div>
+        </div>
+        <div class="section-container">
+            <div class="video-container" onclick="playVideo()">
+                <img src="https://img.youtube.com/vi/FltmDxQcPuk/hqdefault.jpg" alt="Video Thumbnail">
+                <div class="play-button"></div>
+                <iframe id="video" src="https://www.youtube.com/embed/FltmDxQcPuk?autoplay=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            <div class="video-details">
+                <section>
+                    <h2>Monitoring of Landslides</h2>
+                    <p>Here we are going to see some basic monitoring of the landslide and a video that explains clearly.</p>
+                </section>
+                <section>
+                    <p>Geotechnical investigations, slope stability analysis, and remote sensing technologies are used to assess landslide hazards.</p>
+                </section>
+                <section>
+                    <p>Monitoring systems, including inclinometers, piezometers, and ground-based or satellite-based radar, can provide real-time data on slope movements and trigger early warning systems.</p>
+                </section>
+            </div>
+        </div>
+         <div class="blog-section">
+        <h2>Recent Blog Posts</h2>
+        <div class="blog-posts">
+            <div class="blog-post">
+                <a href="https://apnews.com/article/papua-new-guinea-landslide-4743a701cbd8deb17263b8fd9b954083" target="_blank">
+                    <img src="Papua New Guinea Blog.jpg" alt="Papua New Guinea Blog">
+                </a>
+                <div>
+                    <a href="https://apnews.com/article/papua-new-guinea-landslide-4743a701cbd8deb17263b8fd9b954083" target="_blank">
+                        Landslide: Scores of villagers feared dead
+                    </a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <a href="https://eos.org/thelandslideblog/landslides-from-the-record-breaking-2023-storms-in-auckland-new-zealand" target="_blank">
+                    <img src="New Zealand Blog.jpg" alt="New Zealand Blog">
+                </a>
+                <div>
+                    <a href="https://eos.org/thelandslideblog/landslides-from-the-record-breaking-2023-storms-in-auckland-new-zealand" target="_blank">
+                        Landslides: 2023 storms in Auckland, NZ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Landslide Susceptibility Mapping Group 10</p>
+    </footer>
+    <script>
+        function playVideo() {
+            const videoContainer = document.querySelector('.video-container');
+            videoContainer.querySelector('img').style.display = 'none';
+            videoContainer.querySelector('.play-button').style.display = 'none';
+            videoContainer.querySelector('iframe').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
